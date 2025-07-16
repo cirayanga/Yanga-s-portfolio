@@ -1,0 +1,340 @@
+
+body {
+    font-family: 'Poppins'Sans-serif;
+    margin: 0;
+    padding: 4;
+    background-color: black;
+ 
+}
+nav div a{
+    text-decoration: none;
+}
+nav div a h1{
+    color: aqua;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: relative;
+    height:68px;
+}
+nav ul{
+    display: flex;
+    gap:30px;
+    align-items: center;
+
+}
+nav ul li{
+    list-style-type: none;    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}    
+nav ul li a:hover{
+    /*background: black;*/
+    color:aqua;
+    /*box-shadow: 0 0 20px aqua;*/
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color:aqua;
+    font-size: 30px;
+    text-decoration: none;
+
+    
+}
+@media (max-width:600px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        gap:0;
+        overflow: hidden;
+        height: 200;
+        width: 200%;
+        z-index: 1;
+
+
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+/*.Home {
+    background-image: url("profile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+
+}*/
+
+.Home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-image: url(profile.png);
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-position: 70% center;
+    align-items:center;
+   
+    
+}
+.Home-text{
+   max-width: 600px;
+   padding: 70px;
+}
+.Home-text h2 {
+    opacity:0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.5;
+    animation: fadeIn 3s forwards;
+   
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}    
+
+.Home-text p {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.Home-text p:nth-last-of-type(2){
+    margin-bottom:30px;
+
+}
+.Home-text p span{
+    color: aqua;
+   
+}
+/*-----------About Page-------------*/
+#about{
+    padding: 80px, 0;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.myPic{
+    flex-basis:35%;
+}
+
+
+.myPic img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid aqua;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    display: block;
+    margin: 0 auto;
+}
+;
+
+/*.aboutMe-Content p {
+    text-align: left;
+    color: white;
+
+}*/
+
+.sectionHeading h2 {
+    text-align:center;
+    color: white;
+    font-size: 50px;
+    
+}
+.aboutMe-Content{
+   flex-basis: 60%;
+   animation: fadeIn 6s forwards;
+}
+.subHeading{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.aboutMe-Content p{
+    flex-basis:60%;
+    text-align: center;
+    font-size: 28px;
+}
+.skills-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.skills-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+.skills-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+    width:100%;
+}
+.skills-icons{
+    color: White;
+    font-size: 100px;
+    transition: transform 0.3s ease
+}
+.skills-icons i:hover{
+    transform: scale(1.2);
+    color: aqua;
+
+
+}
+
+.details {
+    background-color: black;
+}
+
+.details h2,
+h3,
+p,
+label {
+    color: white;
+    text-align: center;
+
+}
+
+.details button {
+    background-color: grey;
+}
+/*.Education {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+
+}
+.education-t {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background: black;
+    border-radius: 5px;
+}
+.education-t h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: white;
+}
+.education-t p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}*/
+
+
+
+footer {
+    padding: 7px 7px;
+    background-color: grey;
+}
+
+#portfolio {
+    color: white;
+
+}
+
+.form-container {
+    background-color: black;
+    padding: 20px;
+    /*border-radius: 19px;*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.form-container h2 {
+    color: white;
+    
+}
+
+.form {
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+.sumit{
+    color: black;
+    font-size: 15px;
+    transform: scale(1.2);
+
+
+}
+.sumit:hover{
+    background-color: aqua;
+    color: black;
+}

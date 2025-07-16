@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yanga Cira | Software Engineer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #6c63ff;
+        --primary-dark: #564fd1;
+        --secondary: #2d3748;
+        --dark: #1a202c;
+        --light: #f7fafc;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(135deg, #1a202c, #2d3748);
+        color: #e2e8f0;
+        line-height: 1.6;
+      }
+
+      .section-title {
+        font-family: "Poppins", sans-serif;
+        position: relative;
+        padding-bottom: 10px;
+        font-weight: 700;
+        color: var(--light);
+        font-size: 1.75rem;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 70px;
+        height: 4px;
+        background: linear-gradient(to right, var(--primary), var(--primary-dark));
+      }
+
+      .card {
+        background: rgba(45, 55, 72, 0.8);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        border-radius: 1rem;
+        border: 1px solid rgba(74, 85, 104, 0.3);
+        transition: transform 0.3s ease, border-color 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: var(--primary);
+      }
+
+      .badge {
+        background: rgba(108, 99, 255, 0.15);
+        color: var(--primary);
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: white;
+      }
+
+      img {
+        background-color: #2d3748;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav
+      class="py-6 px-6 lg:px-24 fixed w-full z-50 bg-dark bg-opacity-80 backdrop-blur-md"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">
+          <span class="text-primary">YC</span>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-primary transition">Home</a>
+          <a href="#about" class="hover:text-primary transition">About</a>
+          <a href="#skills" class="hover:text-primary transition">Skills</a>
+          <a href="#projects" class="hover:text-primary transition">Projects</a>
+          <a href="#contact" class="hover:text-primary transition">Contact</a>
+        </div>
+        <button
+          class="md:hidden text-gray-400"
+          aria-label="Open navigation menu"
+          title="Open navigation menu"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center pt-20 px-6 lg:px-24"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Hi, I'm <span class="text-primary">Yanga Cira</span>
+          </h1>
+          <h2 class="text-2xl text-gray-400 mb-6">
+            Software Engineer | Desktop Support Technician | AI Associate
+          </h2>
+          <p class="text-lg text-gray-300 mb-8 max-w-lg">
+            A Software Engineer (NQF Level 6) with hands-on experience in backend development, Python scripting, data analysis, and quality assurance. Former Desktop Support Technician and QA Manager, I now build accessible, clean, and secure digital solutions with a strong focus on quality and innovation.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#projects"
+              class="btn-primary px-6 py-3 rounded-full font-medium"
+              >View My Work</a
+            >
+            <a
+              href="#contact"
+              class="border-2 border-primary text-primary px-6 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div
+            class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary"
+          >
+            <!-- Replace with your profile image -->
+            <img
+              src="images/profile.jpg"
+              alt="Yanga Cira"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 lg:px-24">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">About Me</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <p class="text-gray-300 mb-6">
+              I'm a <strong>Software Engineer</strong> with a National Diploma in
+              ICT (NQF Level 6) and professional certifications in
+              <strong>Microsoft Azure Fundamentals</strong>,
+              <strong>Azure Security Engineer Associate</strong>,
+              <strong>Microsoft AI Fluency</strong>, and
+              <strong>Data Analysis Fundamentals</strong>.
+            </p>
+            <p class="text-gray-300 mb-6">
+              My experience spans backend development (Node.js, JavaScript),
+              Python scripting, and data analysis. I previously worked as a
+              <strong>Desktop Support Technician</strong> and</strong>, where I developed
+              strong technical skills  and customer support skills that now enhance my
+              development and system optimization practices.
+            </p>
+            <p class="text-gray-300 mb-6">
+              I'm passionate about building efficient, accessible, and secure
+              digital solutions. I thrive in environments that value continuous
+              learning, attention to detail, and purposeful innovation.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div
+              class="card p-6 text-center hover:border-primary transition"
+            >
+              <i
+                class="fas fa-laptop-code text-3xl text-primary mb-4"
+              ></i>
+              <h4 class="font-bold mb-2">Backend</h4>
+              <p class="text-gray-400">Node.js, JavaScript, Python</p>
+            </div>
+            <div
+              class="card p-6 text-center hover:border-primary transition"
+            >
+              <i
+                class="fas fa-shield-alt text-3xl text-primary mb-4"
+              ></i>
+              <h4 class="font-bold mb-2">Cloud & Security</h4>
+              <p class="text-gray-400"
+                >Azure Fundamentals, Security, AI Fluency</p
+              >
+            </div>
+            <div
+              class="card p-6 text-center hover:border-primary transition"
+            >
+              <i
+                class="fas fa-vial text-3xl text-primary mb-4"
+              ></i>
+              <h4 class="font-bold mb-2">QA & Testing</h4>
+              <p class="text-gray-400">Test Automation, Debugging</p>
+            </div>
+            <div
+              class="card p-6 text-center hover:border-primary transition"
+            >
+              <i
+                class="fas fa-chart-line text-3xl text-primary mb-4"
+              ></i>
+              <h4 class="font-bold mb-2">Data Analysis</h4>
+              <p class="text-gray-400">Pandas, Excel, SQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-20 px-6 lg:px-24 bg-gray-900 bg-opacity-50"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">Technical Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card p-8 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+              <i class="fas fa-code text-primary mr-3"></i> Backend Development
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="badge px-4 py-2 rounded-full">Node.js</span>
+              <span class="badge px-4 py-2 rounded-full">Firebase</span>
+              <span class="badge px-4 py-2 rounded-full">Express</span>
+              <span class="badge px-4 py-2 rounded-full">REST APIs</span>
+            </div>
+          </div>
+          <div class="card p-8 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+              <i class="fas fa-shield-alt text-primary mr-3"></i> Cloud & Security
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="badge px-4 py-2 rounded-full">Azure Fundamentals</span>
+              <span class="badge px-4 py-2 rounded-full">Azure Security Engineer</span>
+              <span class="badge px-4 py-2 rounded-full">AI Fluency</span>
+            </div>
+          </div>
+          <div class="card p-8 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+              <i class="fas fa-cogs text-primary mr-3"></i> Tools & QA
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="badge px-4 py-2 rounded-full">Git</span>
+              <span class="badge px-4 py-2 rounded-full">Jest</span>
+              <span class="badge px-4 py-2 rounded-full">Manual Testing</span>
+              <span class="badge px-4 py-2 rounded-full">Debugging</span>
+            </div>
+          </div>
+          <div class="card p-8 hover:border-primary transition">
+            <h3 class="text-xl font-bold mb-6 flex items-center">
+              <i class="fas fa-database text-primary mr-3"></i> Data & Analysis
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="badge px-4 py-2 rounded-full">Python</span>
+              <span class="badge px-4 py-2 rounded-full">Pandas</span>
+              <span class="badge px-4 py-2 rounded-full">Excel</span>
+              <span class="badge px-4 py-2 rounded-full">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 lg:px-24">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- CodeStream -->
+          <div class="card p-6 hover:border-primary transition">
+            <div
+              class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden"
+            >
+              <img
+                src="images/codestream.jpg"
+                alt="CodeStream video platform interface"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">CodeStream</h3>
+            <p class="text-gray-400 mb-4">
+              Developer-focused video platform built with React and Express.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge px-3 py-1 rounded-full text-sm">React</span>
+              <span class="badge px-3 py-1 rounded-full text-sm">Firebase</span>
+              <span class="badge px-3 py-1 rounded-full text-sm">Express</span>
+            </div>
+            <div class="mt-4 flex space-x-3">
+              <a href="#" class="text-primary hover:underline text-sm"
+                >Live Demo</a
+              >
+              <a href="#" class="text-primary hover:underline text-sm"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <!-- Sentiment Analysis -->
+          <div class="card p-6 hover:border-primary transition">
+            <div
+              class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden"
+            >
+              <img
+                src="images/sentiment-analysis.jpg"
+                alt="Sentiment Analysis Dashboard"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Sentiment Analysis Dashboard</h3>
+            <p class="text-gray-400 mb-4">
+              Python-powered dashboard for analyzing text sentiment.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge px-3 py-1 rounded-full text-sm">Python</span>
+              <span class="badge px-3 py-1 rounded-full text-sm">Streamlit</span>
+              <span class="badge px-3 py-1 rounded-full text-sm">NLTK</span>
+            </div>
+            <div class="mt-4 flex space-x-3">
+              <a href="#" class="text-primary hover:underline text-sm"
+                >Live Demo</a
+              >
+              <a href="#" class="text-primary hover:underline text-sm"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <!-- TheJavas Chatbot -->
+          <div class="card p-6 hover:border-primary transition">
+            <div
+              class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden"
+            >
+              <img
+                src="images/chatbot.jpg"
+                alt="TheJavas Chatbot interface"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">TheJavas Chatbot</h3>
+            <p class="text-gray-400 mb-4">
+              Interactive chatbot built with vanilla JavaScript.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge px-3 py-1 rounded-full text-sm">JavaScript</span>
+              <span class="badge px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+            </div>
+            <div class="mt-4 flex space-x-3">
+              <a
+                href="https://github.com/cirayanga"
+                target="_blank"
+                rel="noopener"
+                class="text-primary hover:underline text-sm"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 px-6 lg:px-24 bg-gray-900 bg-opacity-50"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title mb-12">Get In Touch</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <p class="text-gray-300 mb-8 max-w-lg">
+              Have a project in mind or want to discuss opportunities? I'd love
+              to hear from you!
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold">Email</h4>
+                  <a
+                    href="mailto:cirayanga@gmail.com"
+                    class="text-gray-400 hover:text-primary transition"
+                    >cirayanga@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-4"
+                >
+                  <i class="fab fa-linkedin-in text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold">LinkedIn</h4>
+                  <a
+                    href="https://www.linkedin.com/in/yanga-cira-5b9708186/"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-gray-400 hover:text-primary transition"
+                    >www.linkedin.com/in/yanga-cira-5b9708186</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 rounded-full bg
+
